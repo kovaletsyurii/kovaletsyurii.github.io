@@ -373,7 +373,7 @@ header {
   display: inline-block;
   font-weight: 300;
   cursor: pointer;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
@@ -410,6 +410,69 @@ header {
   #scroll {
     float: right;
     margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  header, .icons {
+    height: 50px;
+  }
+
+  .icons {
+    margin-right: 30px;
+  }
+  .icons img {
+    height: 34px;
+    margin-top: 8px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .start {
+    height: 80vh;
+  }
+  .start span.bold {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 15vh;
+    display: inline-block;
+  }
+  .start span.bold span.light {
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+
+  #skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    float: right;
+    display: block;
+    margin-right: 30%;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+
+  #scroll {
+    float: right;
+    margin-top: 20vh;
+  }
+  #scroll img {
+    height: 40px;
+    vertical-align: middle;
+  }
+
+  header, .icons {
+    height: 30px;
+  }
+
+  .icons {
+    margin-right: 30px;
+  }
+  .icons img {
+    height: 24px;
+    margin-top: 3px;
   }
 }
 
