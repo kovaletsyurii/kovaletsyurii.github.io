@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>YURII KOVALETS | PORTFOLIO</title>
+	<link rel="stylesheet" href="main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src='jquery-3.2.1.min.js'></script>
+	<script src='jquery.color.js'></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<header>
+		<div class="icons">
+		 	<img src="image/fb.png" alt="fb" id='facebook'>
+		 	<img src="image/tg.png" alt="tg" id='telegram'>
+		 	<img src="image/li.png" alt="li" id='linkedIn'>
+		 	<img src="image/insta.png" alt="insta" id='instagram'>
+		</div>
+	</header>
+	<section class="start">
+			<div id="name">
+				<span class="bold">Hi! My name is <span class="light">
+				Yuriy Kovalets</span></span>
+			</div>
+			<div id="skills">
+				<ul>
+					<li>Front-end / Back-end developer</li>
+					<li>Linux and Open Source enthusiast</li>
+					<li>UI designer</li>
+				</ul>
+			</div>
+			<div id='scroll'>
+				<span class="scroll">scroll down to see more </span>
+				<img src="image/scrolldown.gif" alt="scroll">
+			</div>
+	</section>
+	<section class="myProject">
+		<div class="text">
+			MY PROJECTS
+		</div>
+		<div class="container">
+			<div class="oneProject" data-href='https://github.com/kyuriydev?tab=repositories'>
+				<span class="name">Plane your look</span>
+				<span class="description">One-page application written using NodeJs, ES6 and JQuery </span>
+			</div>
+			<div class="oneProject" data-href='https://kyuriydev.github.io/canvas/'>
+				<span class="name">Canvas test app</span>
+				<span class="description">Little canvas drag-n-drop test application on Github</span>
+			</div>
+			<div class="oneProject" data-href='https://github.com/kyuriydev?tab=repositories'>
+				<span class="name">projectName</span>
+				<span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias harum nam illum pariatur, deleniti reprehenderit? Facilis error, dolorum doloribus.</span>
+			</div>
+			<div class="oneProject" data-href='https://github.com/kyuriydev?tab=repositories'>
+				<span class="name">projectName</span>
+				<span class="description"></span>
+			</div>
+			<div class="oneProject" data-href='https://github.com/kyuriydev?tab=repositories'>
+				<span class="name">projectName</span>
+				<span class="description"></span>
+			</div>
+			<div class="oneProject nActive" data-href='https://github.com/kyuriydev?tab=repositories'>
+				<span class="name">projectName</span>
+				<span class="description"></span>
+			</div>
+			<div class="oneProject nActive" data-href='https://github.com/kyuriydev?tab=repositories'>
+				<span class="name">projectName</span>
+				<span class="description" data-href='https://github.com/kyuriydev?tab=repositories'></span>
+			</div>
+			<div class="oneProject nActive" data-href='https://github.com/kyuriydev?tab=repositories'>
+				<span class="name">soon</span>
+				<span class="description"></span>
+			</div>
+		</div>
+	</section>
+	<section class="aboutMe">
+		<div class="text">
+			ABOUT ME
+		</div>
+		<div class="aboutList">
+			<span>As of now: fullstack web-developer, freelancer</span>
+			<span class="leftSpan">I have experieance with: </span>
+			<table>
+				<tr>
+					<td>
+						<ul>
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>ES6</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>SASS</li>
+							<li>JQuery</li>
+							<li>GIT</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>PHP</li>
+							<li>NodeJS</li>
+							<li>Python</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>MongoDB</li>
+							<li>MySQL</li>
+							<li>etc.</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<!--<span class="notation">... and I open to learning in the future</span>-->
+		</div>
+	</section>
+	<section class="contacts">
+		<div class="text">
+			CONTACTS
+		</div>
+		<span id="contactMe">CONTACT ME</span>
+		<span id="formUsing">USING THIS FORM</span>
+		<div class="form">
+			<input type="text" name="name" placeholder="	Your name">
+			<input type="text" name="email" placeholder="	Your email">
+			<input type='text' name='legend'  placeholder="	How can i help?" readonly onclick="event.preventDefault()">
+			<textarea name="problemDescribe"></textarea>
+			<button id="send">SEND</button>
+		</div>
+			<span id='backTop'>Back to top</span>
+
+	</section>
+	<div id="indicators">
+		<ul>
+			<li class="istart" href="start"></li>
+			<li class="imyProject" href="myProject"></li>
+			<li class="iaboutMe" href="aboutMe"></li>
+			<li class="icontacts" href="contacts"></li>
+		</ul>
+	</div>
+</body>
+</html>
