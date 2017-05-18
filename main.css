@@ -5,7 +5,7 @@ body {
   background-color: #fefefe;
   color: #fefefe;
   font-family: "Open Sans", sans-serif;
-  min-width: 440px;
+  min-width: 319px;
   -ms-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -406,15 +406,15 @@ header {
   background-color: #fefefe;
 }
 
+@media (orientation: portrait) {
+  .start, .myProject {
+    height: 100vh;
+  }
+}
 @media only screen and (max-height: 500px) {
   #scroll {
     float: right;
     margin-top: 25px;
-  }
-}
-@media only screen and (orientation: portrait) {
-  section {
-    height: 100vh;
   }
 }
 @media only screen and (max-width: 720px) {
@@ -432,7 +432,7 @@ header {
 }
 @media only screen and (max-width: 650px) {
   .start {
-    height: 80vh;
+    height: 100vh;
   }
   .start span.bold {
     font-size: 24px;
@@ -478,6 +478,37 @@ header {
   .icons img {
     height: 24px;
     margin-top: 3px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .start span.bold {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 15vh;
+    display: inline-block;
+  }
+  .start span.bold span.light {
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  .start #skills ul {
+    margin-left: 30px;
+    padding: 0;
+    text-align: left;
+    float: right;
+    display: block;
+    font-size: 16px;
+  }
+  .start .scroll {
+    font-size: 14px;
+  }
+  .start #scroll {
+    height: 30px;
+  }
+
+  .myProject {
+    height: auto;
   }
 }
 
