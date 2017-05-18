@@ -412,6 +412,11 @@ header {
     margin-top: 25px;
   }
 }
+@media only screen and (orientation: portrait) {
+  section {
+    height: 100vh;
+  }
+}
 @media only screen and (max-width: 720px) {
   header, .icons {
     height: 50px;
