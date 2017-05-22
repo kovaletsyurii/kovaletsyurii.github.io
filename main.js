@@ -34,11 +34,6 @@ $('.icons img').hover(function(){
 	$(this).attr('src','image/'+$(this).attr('alt')+'.png');
 });
 
-$('#backTop').click(function(event){
-	event.preventDefault();
-	$('body, html').animate({scrollTop:0},500);
-});
-
 $('#indicators li').click(function(event){
 	event.preventDefault();
 	let top;

@@ -192,10 +192,11 @@ header
 
 	.aboutList
 		padding-top: 10px
+		padding-bottom: 20px
 		width: 80%
 		margin-left: 10%
 		height: auto
-		max-height: 80%
+		max-height: 100vh
 		//background-color: darken($gray, 20%)
 		color: $blue
 
@@ -206,26 +207,27 @@ header
 			font-size: 18px
 
 		.leftSpan
-			text-align: left
+			//text-align: left
 			font-weight: 300
+			margin-top: 20px
 
-		table
+		.table
 			width: 80%
 			margin-left: 10%
 			color: $blue
 			font-size: 16px
+			text-align: center
+			height: 80%
+			display: inline-block
 
-			td
+			div
 				display: inline-block
-				float: left
-				width: 20%
-				margin-left: 4%
-				min-width: 90px
+				width: 30%
+				height: auto
 
 			ul
 				list-style: none
 				text-align: left
-				//background-color: lighten($gray, 10%)
 
 		.notation
 			width: 100%
@@ -268,7 +270,8 @@ header
 			background-color: $blue !important
 			outline-color: $blue
 			border: none
-			border-bottom: 2px solid $white
+			border-bottom: 2px solid
+			border-color: $white
 			color: $white
 			font-size: 18px
 			font-weight: 300
@@ -340,17 +343,6 @@ header
 			background-color: $white
 			color: $blue
 
-#backTop
-	text-decoration: none
-	color: $white
-	//float: left
-	display: inline-block
-	//margin-right: 50px
-	font-weight: 300
-	cursor: pointer
-	position: relative
-	bottom: 0
-	
 
 #indicators
 	position: fixed
@@ -440,6 +432,15 @@ header
 		img
 			height: 24px
 			margin-top: 3px
+
+	.myProject
+		height: auto
+
+@media only screen and (max-width: 460px)
+	#table
+		div
+			display: block
+			margin-left: 20%
 
 @media only screen and (max-width: 360px)
 	.start
