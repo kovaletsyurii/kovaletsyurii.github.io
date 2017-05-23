@@ -26,11 +26,22 @@ function lightAnchor(data){
 		$('.icontacts').css('background-color','#fefefe').css('border-color','#fefefe');
 	}
 }
-function displayStatus(id, newText, reset){
+function displayStatus(id, newText, reset, email){
 	let oldText = $(id).text();
-	$(id).fadeOut(300).text(newText).fadeIn(300).delay(2500).fadeOut(300).text(oldText).fadeIn(300);
+	$(id).fadeOut(500, function(){
+		$(this).text(newText).fadeIn(500, function(){
+			$(this).delay(2300).fadeOut(500,function(){
+				$(this).text(email).fadeIn(500, function(){
+					$(this).delay(2300).fadeOut(500, function(){
+						$(this).text(oldText).fadeIn(500);
+					});
+				});
+			});
+		});
+	});
 	if(reset){
-		$('.from input, form textarea').val('');
+		let oldColor = $('form textarea').css('color');
+		$('.form input, .form textarea').val('');
 	}
 }
 
@@ -80,9 +91,9 @@ $('#send').click( function(){
         data:`name=${name}&from=${from}&text=${text}`,
         success: function(body){
         	if( body == 200 ){
-        		displayStatus('#formUsing', 'Thank You for feedback', true);
+        		displayStatus('#formUsing', 'Thank You for feedback', true, 'kovaletsyuriy@ukr.net');
         	}else{
-        		displayStatus('#formUsing', 'An error has occurred', false);
+        		displayStatus('#formUsing', 'An error has occurred', false, 'kovaletsyuriy@ukr.net');
         	}
         }
 	}
