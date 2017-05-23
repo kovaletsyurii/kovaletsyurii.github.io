@@ -67,10 +67,6 @@ $('#send').click( function(){
 	let text = $('textarea[name=problemDescribe]').val();
 
 	let opt = {
-		 headers: {
-        	"Access-Control-Allow-Origin": "*"
-      	},
-      	contentType: "text/html",
 		type:'GET',
         url:'https://myownmailtransfer.000webhostapp.com/index.php',
         data:`name=${name}&from=${from}&text=${text}`,
