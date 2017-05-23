@@ -28,7 +28,7 @@ function lightAnchor(data){
 }
 function displayStatus(id, newText, reset){
 	let oldText = $(id).text();
-	$(id).fadeOut(500).text(newText).delay(2000).text(oldText).fadeIn(500);
+	$(id).fadeOut(300).text(newText).fadeIn(300).delay(2500).fadeOut(300).text(oldText).fadeIn(300);
 	if(reset){
 		$('.from input, form textarea').val('');
 	}
