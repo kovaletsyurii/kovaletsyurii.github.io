@@ -26,6 +26,14 @@ function lightAnchor(data){
 		$('.icontacts').css('background-color','#fefefe').css('border-color','#fefefe');
 	}
 }
+function displayStatus(id, newText, reset){
+	let oldText = $(id).text();
+	$(id).fadeOut(500).text(newText).delay(2000).text(oldText).fadeIn(500);
+	if(reset){
+		$('.from input, form textarea').val('');
+	}
+}
+
 
 //icons
 $('.icons img').hover(function(){
@@ -71,7 +79,11 @@ $('#send').click( function(){
         url:'https://myownmailtransfer.000webhostapp.com/index.php',
         data:`name=${name}&from=${from}&text=${text}`,
         success: function(body){
-        	alert(body);
+        	if( body == 200 ){
+        		displayStatus('#formUsing', 'Thank You for feedback', true);
+        	}else{
+        		displayStatus('#formUsing', 'An error has occurred', false);
+        	}
         }
 	}
 
