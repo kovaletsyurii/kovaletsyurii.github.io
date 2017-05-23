@@ -73,12 +73,13 @@ $('#send').click( function(){
       	contentType: "text/html",
 		type:'GET',
         url:'https://myownmailtransfer.000webhostapp.com/index.php',
-        data:`name=${name}&from=${from}&text=${text}`
+        data:`name=${name}&from=${from}&text=${text}`,
+        success: function(body){
+        	alert(body);
+        }
 	}
 
-	$.ajax(opt).done(function(data){
-		console.log(data);
-	});
+	$.ajax(opt);
 
 });
 });
