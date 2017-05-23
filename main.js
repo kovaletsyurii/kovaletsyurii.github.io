@@ -55,4 +55,30 @@ let aData = getAnchors();
 $(window).scroll(function(){
 	lightAnchor(aData);
 });
+
+
+
+
+//send email
+$('#send').click( function(){
+	let from = $('input[name=email]').val();
+	//let to = 'kovaletsyuriy@ukr.net';
+	let name = $('input[name=name]').val();
+	let text = $('textarea[name=problemDescribe]').val();
+
+	let opt = {
+		 headers: {
+        	"Access-Control-Allow-Origin": "*"
+      	},
+      	contentType: "text/html",
+		type:'GET',
+        url:'https://myownmailtransfer.000webhostapp.com/index.php',
+        data:`name=${name}&from=${from}&text=${text}`
+	}
+
+	$.ajax(opt).done(function(data){
+		console.log(data);
+	});
+
+});
 });
