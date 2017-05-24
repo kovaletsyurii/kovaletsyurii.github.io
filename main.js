@@ -84,21 +84,27 @@ $('#send').click( function(){
 	//let to = 'kovaletsyuriy@ukr.net';
 	let name = $('input[name=name]').val();
 	let text = $('textarea[name=problemDescribe]').val();
-
-	let opt = {
-		type:'GET',
-        url:'https://myownmailtransfer.000webhostapp.com/index.php',
-        data:`name=${name}&from=${from}&text=${text}`,
-        success: function(body){
-        	if( body == 200 ){
-        		displayStatus('#formUsing', 'Thank You for feedback', true, 'kovaletsyuriy@ukr.net');
-        	}else{
-        		displayStatus('#formUsing', 'An error has occurred', false, 'kovaletsyuriy@ukr.net');
-        	}
-        }
+	if(from.length == 0){
+		$('input[name=email]').animate({borderColor : '#FD9494'}).delay(600).animate({borderColor : '#fefefe'});
 	}
+	if(name.length == 0){
+		$('input[name=name]').animate({borderColor : '#FD9494'}).delay(600).animate({borderColor : '#fefefe'});
+	}
+	if(from.length != 0 && name.length != 0){
+		let opt = {
+			type:'GET',
+	        url:'https://myownmailtransfer.000webhostapp.com/index.php',
+	        data:`name=${name}&from=${from}&text=${text}`,
+	        success: function(body){
+	        	if( body == 200 ){
+	        		displayStatus('#formUsing', 'Thank You for feedback', true, 'kovaletsyuriy@ukr.net');
+	        	}else{
+	        		displayStatus('#formUsing', 'An error has occurred', false, 'kovaletsyuriy@ukr.net');
+	        	}
+	        }
+		}
 
-	$.ajax(opt);
-
+		$.ajax(opt);
+	}
 });
 });
