@@ -86,6 +86,7 @@ $('#send').click( function(){
 	let text = $('textarea[name=problemDescribe]').val();
 	if(from.length == 0){
 		$('input[name=email]').animate({borderColor : '#FD9494'}).delay(600).animate({borderColor : '#fefefe'});
+		
 	}
 	if(name.length == 0){
 		$('input[name=name]').animate({borderColor : '#FD9494'}).delay(600).animate({borderColor : '#fefefe'});
