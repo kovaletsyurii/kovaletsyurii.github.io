@@ -358,13 +358,16 @@ header {
       margin-top: 8px; } }
 @media only screen and (max-width: 650px) {
   .start {
-    min-height: 300px;
-    height: auto; }
+    min-height: 80vh;
+    height: auto;
+    padding-top: 20vh;
+    padding-bottom: 20vh; }
     .start span.bold {
       font-size: 24px;
       font-weight: 400;
       letter-spacing: 1px;
-      margin-top: 15vh; }
+      margin-top: 15vh;
+      display: inline-block; }
       .start span.bold span.light {
         font-weight: 300;
         letter-spacing: 2px; }
