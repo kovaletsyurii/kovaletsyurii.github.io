@@ -358,7 +358,7 @@ header {
       margin-top: 8px; } }
 @media only screen and (max-width: 650px) {
   .start {
-    min-height: 100vh;
+    min-height: 300px;
     height: auto; }
     .start span.bold {
       font-size: 24px;
