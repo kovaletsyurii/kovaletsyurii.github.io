@@ -60,7 +60,7 @@ $('#indicators li').click(function(event){
 	$('body, html').animate({scrollTop:top+1},500);
 });
 
-$('.oneProject:not(.nActive)').click(function(){
+$('.oneProject:not(.nActive), .icons img').click(function(){
 	let href = $(this).attr('data-href');
 	window.open(href, '_blank').focus();
 });
