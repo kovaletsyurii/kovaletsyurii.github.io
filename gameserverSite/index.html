@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test-task</title>
+	<link rel="stylesheet" href="main.css">
+	<script src='jquery-2.2.4.min.js'></script>
+	<script src='jquery.mobile.custom.min.js'></script>
+	<script src='svg.min.js'></script>
+	<script src='script.js'></script>
+</head>
+<body>
+	<header>
+		<div class="leftPart">
+			<a href="#">News</a>
+			<a href="#">Info</a>
+			<a href="#">Forums</a>
+			<a href="#">Rules</a>
+		</div>
+		<div class="rightPart">
+			<a href="#">Log in</a>
+			<span href="#"> | </span>
+			<a href="#">Registration</a>
+		</div>
+	</header>
+	<div class="mobileMenu" role='navigation'>
+			<div class="mainMenu">
+			<svg version="1.1" id="hamburger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+				<style type="text/css">
+					.hamb{fill:#ffffff;}
+				</style>
+				<rect x="5.5" y="12" class="hamb line1" width="50" height="6.5"/>
+				<rect x="5.5" y="26.7" class="hamb line2" width="50" height="6.5"/>
+				<rect x="5.5" y="41.5" class="hamb line3" width="50" height="6.5"/>
+			</svg>
+				MENU
+				<ul>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Info</a></li>
+					<li><a href="#">Forums</a></li>
+					<li><a href="#">Rules</a></li>
+				</ul>
+			</div>
+			<div class="signMenu">
+				ACCOUNT
+				<ul>
+					<li><a href="#">Sign up</a></li>
+					<li><a href="#">Sign in</a></li>
+				</ul>
+			</div>
+		</div>
+	<section class="slider">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width='200' height='63' viewBox='0 0 180 63' id='fbButton'>
+			<defs>
+				<style>
+					.cls-1{
+						fill:#008075;
+						margin-top: 10px;
+					}
+					.facebook, .facebook + text{
+						cursor: pointer;
+					}
+				</style>
+			</defs>
+			<g>
+				<rect width='200' height='60' fill='#000000' ry='30' rx='30' x='-75' y='1' style=' -webkit-filter: blur(3px); -moz-filter: blur(3px); filter: blur(3px);'/>
+				<rect width='200' height='60' fill='#00655c' ry='30' rx='30' x='-70' />
+		 		<circle cy="32" cx="126" r="15" fill="#000000" style=' -webkit-filter: blur(5px); -moz-filter: blur(3px); filter: blur(3px);'/>
+				<circle cy="30" cx="125" r="15" fill="#657dd7" class='facebook'/>
+				<text x="121" y="39" fill="#ffffff" font-size="28" font-family='Calibri, bold' class='face_ref'>f</text>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="25 -5 60 60">
+					<path class="cls-1" d="M24.85,6.08S30.65-.5,37,.12,48.49,4,49.94,13,24.85,50,24.85,50-5.61,21.77.92,9.38,16.44-2.07,24.85,6.08Z"/>
+				</svg>
+				<text x="6" y="36" fill="#ffffff" font-size="15" font-family='Arial' style="filter: progid:DXImageTransform.Microsoft.DropShadow(offX=2, offY=2, color=#000000, positive=true);text-shadow:2px 2px 3px rgba(0,0,0,1); -webkit-text-shadow:2px 2px 3px rgba(0,0,0,1); -moz-text-shadow:2px 2px 3px rgba(0,0,0,1);">FOLLOW US!</text>
+			</g>
+		</svg>	
+		<svg version="1.1" id="slider" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 1024.5 326" style="enable-background:new 0 0 1024.5 326.7;" xml:space="preserve">
+			<style type="text/css">
+				.st0{fill:#303030;}
+				.st1{fill:#006B62;}
+				.strokeArrow{
+					fill:transparent;
+					stroke:#ffffff;
+					stroke-width:2;
+					stroke-miterlimit:10; 
+					cursor:pointer;
+					transition: opacity 0.2s;
+				}
+				.left rect, .right rect{
+					cursor: pointer;
+				}
+				.left rect:hover + .strokeArrow , .right rect:hover + .strokeArrow{
+					opacity: 0.7;
+				}
+			</style>
+			<linearGradient id="linear-gradient">
+				<stop offset="10%" stop-color="black"/>
+				<stop offset="50%" stop-color="#05393d" id='blue_grad'/>
+				<stop offset="90%" stop-color="black"/>
+			</linearGradient>
+			<image style="overflow:visible;enable-background:new;" width="2000" height="464" xlink:href="layer.png"  transform="matrix(0.5126 0 0 0.5129 0 0)" >
+			</image>
+			<image style="overflow:visible;enable-background:new;" width="1000" height="683" xlink:href="man.png" x="-860" y="18" transform="scale(0.44, 0.44)" id='i1' data-num='1'>
+			</image>
+			<image style="overflow:visible;enable-background:new;" width="1000" height="683" xlink:href="man.png"  x="405" y="18" transform="scale(0.44, 0.44)"  id='i2' data-num='2'>
+			</image>
+			<image style="overflow:visible;enable-background:new;" width="1000" height="683" xlink:href="man.png"  x="2305" y="18" transform="scale(0.44, 0.44)" id='i3' data-num='3'>
+			</image>
+			<image style="overflow:visible;enable-background:new;" width="1000" height="683" xlink:href="man.png"  x="2305" y="18" transform="scale(0.44, 0.44)" id='i4' data-num='4'>
+			</image>
+			<image style="overflow:visible;enable-background:new;" width="1000" height="683" xlink:href="man.png"  x="2305" y="18" transform="scale(0.44, 0.44)" id='i5' data-num='5'>
+			</image>
+			<g class='left' transform='translate(255, 90) scale(0.6, 0.6)'>
+				<rect width='60' height='60' x='0' y='0' fill='rgba(0,0,0,0)'/>
+				<g class="strokeArrow">
+					<path d="M47.9,1.3l-29.7,30L47.9,1.3z"/>
+					<path d="M18.3,30l29.7,30L18.3,30z"/>	
+				</g>
+			</g>
+			<g class='right' transform='translate(718, 90) scale(0.6, 0.6)'>
+				<rect width='60' height='60' x='0' y='0' fill='rgba(0,0,0,0)'/>
+				<g class="strokeArrow">
+					<path d="M18.3,60l29.7-30L18.3,60z"/>
+					<path d="M47.9,31.3l-29.7-30L47.9,31.3z"/>
+				</g>
+			</g>
+			<g class="indicators">
+				<circle cy="220" cx="485" r="3" fill="#6d6d6d" class='i1'/>
+				<circle cy="220" cx="500" r="4" fill="#23a8b3" class='i2'/>
+				<circle cy="220" cx="515" r="3" fill="#6d6d6d" class='i3'/>
+				<circle cy="220" cx="530" r="3" fill="#6d6d6d" class='i4'/>
+				<circle cy="220" cx="545" r="3" fill="#6d6d6d" class='i5'/>
+			</g>
+			<polygon class="st0" points="0,203.9 515.5,282.2 1025.1,205.7 1023.8,317.9 1023.8,326.7 1.3,326.7 "/>
+			<g id="Слой_x0020_1">
+				<polygon class="st1" points="513.2,283.2 -1.3,205.9 512.3,248.5 1025.8,205.9 	"/>
+				<text x="45%" y="265" id='donation' fill="#ffffff" font-size="11" font-family='Cinzel Bold' style="filter: progid:DXImageTransform.Microsoft.DropShadow(offX=2, offY=2, color=#000000, positive=true); text-shadow:2px 2px 3px rgba(0,0,0,1); -webkit-text-shadow:2px 2px 3px rgba(0,0,0,1); -moz-text-shadow:2px 2px 3px rgba(0,0,0,1); cursor: pointer;">QUICK DONATION</text>
+			</g>
+			<polygon id="_x32_57" fill="url(#linear-gradient)" points="0,207.9 0,194.7 518.8,236.5 1025.1,194.7 1025.1,206.7 519.1,249.9 "/>
+			<g id="description" transform='translate(550, 80)' fill='#ffffff'>
+				<text class='big' x="40">A Path</text>
+				<text class='big' y="25">to Awakening</text>
+				<rect x="65" y='44' width="30" height="1.5" fill="#ffffff"/>
+				<text class='little' y="70" x="46">You guide</text>
+				<text class='little' y="86" x='15'>for leveling up fast!</text>
+			</g>
+		</svg>
+		<div class="mobileSlider">
+			<!--Поддерживает свайпы-->
+			<img src="man.png" alt="1" class="sliderImage" id="j1"><img src="man.png" alt="2" class="sliderImage"><img src="man.png" alt="3" class="sliderImage"><img src="man.png" alt="4" class="sliderImage"><img src="man.png" alt="5" class="sliderImage">
+			<svg version="1.1" id="circles" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 768 500" xml:space="preserve">
+				<g class="indicators mobileIndicators">
+					<circle cy="10" cx="355" r="4" fill="#23a8b3" class='j1'/>
+					<circle cy="10" cx="370" r="3" fill="#6d6d6d" class='j2'/>
+					<circle cy="10" cx="385" r="3" fill="#6d6d6d" class='j3'/>
+					<circle cy="10" cx="400" r="3" fill="#6d6d6d" class='j4'/>
+					<circle cy="10" cx="415" r="3" fill="#6d6d6d" class='j5'/>
+				</g>
+			</svg>
+		</div>
+		<a href="#" id='mobileDonation'>
+			<button>
+			QUICK DONATION
+			</button>
+		</a>
+	</section>
+	<section class='textContent'>
+		<h2 class="serverNews">	Server news <div class="hr"></div></h2>
+		<div class="news">
+			<div class='one'>
+				<span>Path of awakening</span>
+				<hr aligh='center' size='1'>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius laborum iusto quasi ea, autem quia alias ipsam perferendis magni quam neque maiores vitae incidunt fugiat, voluptatum pariatur minus, maxime sint?
+				</p>
+			</div>
+			<div class='one'>
+				<span>Path of awakening</span>
+				<hr aligh='center' size='1'>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore officiis inventore, iste eum ut nostrum dolore, perferendis aspernatur, quos fugiat reprehenderit cumque! Eaque inventore, rerum, dicta expedita aperiam illo nesciunt.
+				</p>
+			</div>
+			<div class='one'>
+				<span>Path of awakening</span>
+				<hr aligh='center' size='1'>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita nisi aliquid nobis laudantium aperiam dolorum illum, nesciunt iste, magni odio? Praesentium cum, aliquid debitis ullam recusandae eaque voluptatibus velit sunt.
+				</p>
+			</div>
+		</div>
+		
+	</section>
+		<svg version="1.1" class="footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024.5 88.6" style="enable-background:new 0 0 1024.5 88.6;" xml:space="preserve">
+			<style type="text/css">
+				.arr{fill:#006B62;}
+			</style>
+			<polygon class="arr" points="0,3 514.5,80.3 1024.5,3.4 1024.5,0 541.5,72 513.6,74.3 487,72.3 0,0 "/>
+			<polygon points="0,3 514.5,80.3 1024.5,3.4 1024.5,94.6 0,94.6 "/>
+		</svg>
+</body>
+</html>
