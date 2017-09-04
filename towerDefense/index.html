@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DEF</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/three.min.js"></script>
+	<script src="js/stats.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div id="output"></div>
+	<div class="gold"><span>100</span> <img src="coin.png" alt="coin"></div>
+	<div id="typeEcho">
+		<span>type: </span>
+	</div>
+	<div class="towers">
+		<div class="tower">
+			<svg width="90" height="90" title="simple I-Level Tower">
+    			<rect x="0" y="0" width="90" height="90" fill="#0B610B"/>		
+    		</svg>
+    		<ol>
+    			<li class="updcost">Next upd: <span class="golda">30</span><img src="coin.png" alt="coin" class="coin"></li>
+    			<li class="healthPoints">HP: 60 <span class="onNextLevel">+10</span></li>
+    			<li class="attackPoints">Attack: 5 <span class="onNextLevel">+3</span></li>
+    			<li class="radiusPoints">Radius: 5 <span class="onNextLevel">+2</span></li>
+    			<li class="levelPoints">Level: 0 <span class="onNextLevel">+1</span></li>
+    		</ol>
+		</div>
+	</div>
+	<button class="start">START</button>
+	<div class="dialog">
+		<p>Construct a tower for 40 coins?</p>
+		<button class="yes">YES</button>
+		<button class="no">NO</button>
+	</div>
+</body>
+</html>

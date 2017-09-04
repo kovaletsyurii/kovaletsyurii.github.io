@@ -1,0 +1,131 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color: black;
+	overflow: hidden;
+}
+#typeEcho{
+	width: auto;
+	height: auto;
+	border: none;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+#typeEcho span{
+	color: white;
+}
+.start{
+	color: #58ACFA;
+	transition: color 0.3s;
+	border: none;
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	background: none;
+	outline: none;
+	font-size: 16px;
+	font-weight: 800;
+}
+.start:hover{
+	color: #2E64FE;
+	cursor: pointer;
+}
+.gold{
+	font-size: 20px;
+	font-weight: 800;
+	color: #FFBF00;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 100%;
+	text-align: center;
+	z-index: 10;
+}
+.gold img{
+	display: inline-block;
+	width: 17px;
+	margin-top: 1px;
+	vertical-align: center;
+}
+.towers{
+	position: absolute;
+	display: block;
+	width: auto;
+	height: auto;
+	background-color: #515151;
+	top: 0;
+	right: 30px;
+	z-index: 0;
+	padding: 5px;
+	padding-right: 10px;
+	padding-bottom: 0;
+}
+.tower{
+	width: 100%;
+	margin-bottom: 5px;
+	background-color: #070707;
+	min-width: 90px;
+	min-height: 90px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+.tower ol{
+	display: block;
+	max-width: 80px;
+	color: white;
+	list-style: none;
+	padding-left: 0px;
+	font-size: 12px;
+}
+.tower ol li .onNextLevel{
+	color: #FE2E2E;
+}
+.tower ol li .golda{
+	color: #FFBF00;
+}
+.tower ol li .coin{
+	width: 9px;
+}
+
+.dialog{
+	width: 30%;
+	margin-left: 35%;
+	height: 90px;
+	position: absolute;
+	bottom: -110px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 2px solid white;
+	padding-bottom: 10px;
+}
+.dialog button{
+	width: 50px;
+	height: auto;
+	color: white;
+	font-size: 16px;
+	background-color: #515151;
+	outline: none;
+	border: 2px solid white;
+	cursor: pointer;
+	transition: background-color 0.2s;
+	transition: color 0.2s;
+}
+.dialog .yes{
+	margin-right: 30px;
+	margin-bottom: 10px;
+}
+.dialog .no{
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+.dialog button:hover{
+	background-color: white;
+	color: #515151;
+	border-color: #515151;
+}
