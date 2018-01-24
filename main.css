@@ -125,3 +125,11 @@ header {
         -webkit-animation: ani-mouse 2.5s linear infinite;
         -moz-animation: ani-mouse 2.5s linear infinite;
         animation: ani-mouse 2.5s linear infinite; }
+
+@media (max-width: 768px) {
+  header .social-icons {
+    text-align: center; }
+    header .social-icons-item {
+      font-size: 24px; }
+  .section1 .main-list {
+    padding: 0px 20px; } }
