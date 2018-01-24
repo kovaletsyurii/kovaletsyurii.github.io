@@ -1,0 +1,22 @@
+body {
+  background-color: white; }
+
+header {
+  background-color: #151515;
+  padding: 20px 0px; }
+
+.social-icons {
+  text-align: right;
+  width: 100%; }
+  .social-icons-item {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s; }
+    .social-icons-item:not(:last-child) {
+      margin: 0px 20px; }
+    .social-icons-item:last-child {
+      margin: 0px 0px 0px 20px; }
+    .social-icons-item:hover {
+      color: #01A9DB; }
