@@ -1,9 +1,12 @@
 body {
-  background-color: white; }
+  background-color: #fff; }
 
 header {
   background-color: #151515;
-  padding: 20px 0px; }
+  padding: 20px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
 
 .social-icons {
   text-align: right;
@@ -20,3 +23,105 @@ header {
       margin: 0px 0px 0px 20px; }
     .social-icons-item:hover {
       color: #01A9DB; }
+
+.section1 {
+  background-color: #01A9DB;
+  min-height: 100vh;
+  width: 100%;
+  display: table;
+  position: relative;
+  z-index: 1; }
+  .section1-container {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle; }
+  .section1-row {
+    width: 100%; }
+    .section1-row .main-header {
+      color: #fff;
+      text-align: center; }
+      .section1-row .main-header .name {
+        letter-spacing: 1px; }
+    .section1-row .main-list {
+      color: #fff;
+      list-style: none;
+      letter-spacing: 1px;
+      font-size: 14px; }
+  .section1 .scroll-down {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    text-align: center; }
+    .section1 .scroll-down div {
+      font-size: 16px;
+      color: #fff; }
+
+@-webkit-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%; }
+  15% {
+    opacity: 1;
+    top: 50%; }
+  50% {
+    opacity: 0;
+    top: 50%; }
+  100% {
+    opacity: 0;
+    top: 29%; }
+  @-moz-keyframes ani-mouse {
+    0% {
+      opacity: 1;
+      top: 29%; }
+    15% {
+      opacity: 1;
+      top: 50%; }
+    50% {
+      opacity: 0;
+      top: 50%; }
+    100% {
+      opacity: 0;
+      top: 29%; } }
+  @keyframes ani-mouse {
+    0% {
+      opacity: 1;
+      top: 29%; }
+    15% {
+      opacity: 1;
+      top: 50%; }
+    50% {
+      opacity: 0;
+      top: 50%; }
+    100% {
+      opacity: 0;
+      top: 29%; } } }
+      .section1 .scroll-down div .mouse {
+        position: relative;
+        display: inline-block;
+        width: 25px;
+        height: 40px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 2px solid white;
+        border-radius: 23px;
+        vertical-align: middle;
+        margin-left: 15px;
+        cursor: pointer;
+        transition: 0.5s; }
+        .section1 .scroll-down div .mouse:hover {
+          border-color: #e6e6e6; }
+      .section1 .scroll-down div .mouse > * {
+        position: absolute;
+        display: block;
+        top: 29%;
+        left: 52%;
+        width: 7px;
+        height: 7px;
+        margin: -4px 0 0 -4px;
+        background: white;
+        border-radius: 50%;
+        -webkit-animation: ani-mouse 2.5s linear infinite;
+        -moz-animation: ani-mouse 2.5s linear infinite;
+        animation: ani-mouse 2.5s linear infinite; }
