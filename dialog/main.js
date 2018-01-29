@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var selectedElement;
-	var elementsArray = [null];
+	var elementsArray = [];
 	var textArray = [];
 	var _messageTextId;
 	var _x, _y;
@@ -53,7 +53,7 @@ $(document).ready(function(){
 	}
 
 	function drawMessage(){
-		let id = elementsArray.length-1;
+		let id = elementsArray.length;
 		elementsArray[id] = draw.rect(svgConfig.message.width, svgConfig.message.height)
 			.radius(svgConfig.message.round, svgConfig.message.round)
 			.attr({fill: '#0080FF'})
