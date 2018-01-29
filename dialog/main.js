@@ -84,9 +84,10 @@ $(document).ready(function(){
 			.fill('#fff')
 			.style({'cursor': 'pointer', 'user-select' : 'none'})
 			.click(function(){
+				let id_message = textArray.length-1
 				$('#message-val').val(this.text());
 				$('.input-message').css('display','inline-block');
-				_messageTextId = id;
+				_messageTextId = id_message;
 			});
 
 	}
