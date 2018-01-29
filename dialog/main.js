@@ -85,6 +85,8 @@ $(document).ready(function(){
 			.click(function(){
 				let id_message = this.remember('id_message');
 				console.log('id_message', id_message);
+				console.log('textArray', textArray);
+				console.log('elementsArray', elementsArray);
 				$('#message-val').val(this.text());
 				$('.input-message').css('display','inline-block');
 				_messageTextId = id_message;
