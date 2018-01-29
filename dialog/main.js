@@ -65,8 +65,11 @@ $(document).ready(function(){
 			.mousemove(function(e){
 				if( _canMove ){
 	  				this.move(_x-this.width()/2,_y-this.height()/2);
-	  				textArray[id].move(this.x()+this.width()/2, this.y()+7);
+	  				textArray[id].style({'display':'none'}).move(this.x()+this.width()/2, this.y()+7);
 				}
+			})
+			.mouseout(function(){
+				textArray[id].style({'display':'inline-block'});
 			});
 
 		let element = elementsArray[id];
@@ -79,13 +82,6 @@ $(document).ready(function(){
 				$('#message-val').val(this.text());
 				$('.input-message').css('display','inline-block');
 				_messageTextId = id;
-			})
-			.mousemove(function(e){
-				if( _canMove ){
-					console.log('move');
-	  				//this.move(_x-this.width()/2,_y-this.height()/2);
-	  				//elementsArray[id].move(this.x()+this.width()/2, this.y()+7);
-				}
 			});
 
 	}
