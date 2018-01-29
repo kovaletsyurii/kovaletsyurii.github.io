@@ -69,19 +69,17 @@ $(document).ready(function(){
 				}
 			})
 			.mouseout(function(){
-				console.log('id:',id);
 				textArray[id].style({'visibility':'visible'});
 			})
 			.mouseup(function(){
-				console.log('id:',id);
 				textArray[id].style({'visibility':'visible'});
 			});
 
 		let element = elementsArray[id];
-			textArray[id] = draw.text('message').
+			textArray[id] = draw.text('message')
 			.remember({id_message : id })
-			move(element.x()+element.width()/2, element.y()+7).
-			attr({'text-anchor':'middle', 'alignment-baseline':'middle'})
+			.move(element.x()+element.width()/2, element.y()+7)
+			.attr({'text-anchor':'middle', 'alignment-baseline':'middle'})
 			.fill('#fff')
 			.style({'cursor': 'pointer', 'user-select' : 'none'})
 			.click(function(){
