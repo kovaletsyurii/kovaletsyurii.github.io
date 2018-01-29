@@ -78,7 +78,13 @@ $(document).ready(function(){
 				$('#message-val').val(this.text());
 				$('.input-message').css('display','inline-block');
 				_messageTextId = id;
-			});
+			})
+			.mousemove(function(e){
+				if( _canMove ){
+	  				this.move(_x-this.width()/2,_y-this.height()/2);
+	  				elementsArray[id].move(this.x()+this.width()/2, this.y()+7);
+				}
+			});;
 
 	}
 
