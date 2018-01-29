@@ -69,9 +69,11 @@ $(document).ready(function(){
 				}
 			})
 			.mouseout(function(){
+				console.log('id:',id);
 				textArray[id].style({'display':'inline-block'});
 			})
 			.mouseup(function(){
+				console.log('id:',id);
 				textArray[id].style({'display':'inline-block'});
 			});
 
