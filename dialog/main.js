@@ -70,6 +70,9 @@ $(document).ready(function(){
 			})
 			.mouseout(function(){
 				textArray[id].style({'display':'inline-block'});
+			})
+			.mouseup(function(){
+				textArray[id].style({'display':'inline-block'});
 			});
 
 		let element = elementsArray[id];
