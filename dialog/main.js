@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var selectedElement;
-	var elementsArray = [];
+	var elementsArray = [null];
 	var textArray = [];
 	var _messageTextId;
 	var _x, _y;
@@ -84,6 +84,7 @@ $(document).ready(function(){
 			.style({'cursor': 'pointer', 'user-select' : 'none'})
 			.click(function(){
 				let id_message = this.remember('id_message');
+				console.log('id_message', id_message);
 				$('#message-val').val(this.text());
 				$('.input-message').css('display','inline-block');
 				_messageTextId = id_message;
