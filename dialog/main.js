@@ -65,7 +65,7 @@ $(document).ready(function(){
 			.mousemove(function(e){
 				if( _canMove ){
 	  				this.move(_x-this.width()/2,_y-this.height()/2);
-	  				textArray[id].style({'display':'none'}).move(this.x()+this.width()/2, this.y()+7);
+	  				textArray[id].move(this.x()+this.width()/2, this.y()+7);
 				}
 			})
 			.mouseout(function(){
