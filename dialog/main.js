@@ -65,16 +65,16 @@ $(document).ready(function(){
 			.mousemove(function(e){
 				if( _canMove ){
 	  				this.move(_x-this.width()/2,_y-this.height()/2);
-	  				textArray[id].move(this.x()+this.width()/2, this.y()+7);
+	  				textArray[id].style({'visibility':'hidden'}).move(this.x()+this.width()/2, this.y()+7);
 				}
 			})
 			.mouseout(function(){
 				console.log('id:',id);
-				textArray[id].style({'display':'inline-block'});
+				textArray[id].style({'visibility':'visible'});
 			})
 			.mouseup(function(){
 				console.log('id:',id);
-				textArray[id].style({'display':'inline-block'});
+				textArray[id].style({'visibility':'visible'});
 			});
 
 		let element = elementsArray[id];
