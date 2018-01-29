@@ -74,6 +74,7 @@ $(document).ready(function(){
 			move(element.x()+element.width()/2, element.y()+7).
 			attr({'text-anchor':'middle', 'alignment-baseline':'middle'})
 			.fill('#fff')
+			.style({'cursor': 'pointer', 'user-select' : 'none'})
 			.click(function(){
 				$('#message-val').val(this.text());
 				$('.input-message').css('display','inline-block');
@@ -81,8 +82,9 @@ $(document).ready(function(){
 			})
 			.mousemove(function(e){
 				if( _canMove ){
-	  				this.move(_x-this.width()/2,_y-this.height()/2);
-	  				elementsArray[id].move(this.x()+this.width()/2, this.y()+7);
+					console.log('move');
+	  				//this.move(_x-this.width()/2,_y-this.height()/2);
+	  				//elementsArray[id].move(this.x()+this.width()/2, this.y()+7);
 				}
 			});;
 
