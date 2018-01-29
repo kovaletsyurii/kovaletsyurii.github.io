@@ -79,12 +79,13 @@ $(document).ready(function(){
 
 		let element = elementsArray[id];
 			textArray[id] = draw.text('message').
+			.remember({id_message : id })
 			move(element.x()+element.width()/2, element.y()+7).
 			attr({'text-anchor':'middle', 'alignment-baseline':'middle'})
 			.fill('#fff')
 			.style({'cursor': 'pointer', 'user-select' : 'none'})
 			.click(function(){
-				let id_message = textArray.length-1
+				let id_message = this.remember('id_message');
 				$('#message-val').val(this.text());
 				$('.input-message').css('display','inline-block');
 				_messageTextId = id_message;
