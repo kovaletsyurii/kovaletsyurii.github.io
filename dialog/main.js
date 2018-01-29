@@ -86,7 +86,7 @@ $(document).ready(function(){
 	  				//this.move(_x-this.width()/2,_y-this.height()/2);
 	  				//elementsArray[id].move(this.x()+this.width()/2, this.y()+7);
 				}
-			});;
+			});
 
 	}
 
